@@ -1,5 +1,5 @@
 {
-    'name': 'Block Location Outgoing',
+    'name': 'Block Location',
     'version': 'saas~18.2.0.0.1',
     'summary': 'Block outgoing operations from specific stock locations',
     'category': 'Warehouse',
@@ -15,6 +15,7 @@
         'security/security.xml',
         'security/ir.model.access.csv',
         'views/stock_location_view.xml',
+        'views/pos_options.xml',
     ],
     'installable': True,
     'application': False,
