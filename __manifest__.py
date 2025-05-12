@@ -10,13 +10,20 @@
         'base',
         'stock',
         'mail',
+        'point_of_sale',
     ],
     'data': [
         'security/security.xml',
         'security/ir.model.access.csv',
         'views/stock_location_view.xml',
-        'views/pos_options.xml',
     ],
+    'assets': {
+        'point_of_sale.assets': [
+            'stock_blocked_location/static/src/js/pos.js',
+            'stock_blocked_location/static/src/xml/pos.xml',
+            'stock_blocked_location/static/src/css/pos.css',
+        ],
+    },
     'installable': True,
     'application': False,
 }

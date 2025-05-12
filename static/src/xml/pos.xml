@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates xml:space="preserve">
+
+    <t t-name="CustomProductCardQty" t-inherit="point_of_sale.ProductCard" t-inherit-mode="extension">
+        <xpath expr="//div[contains(@class, 'product-information-tag')]" position="before">
+            <div class="product-qty-box position-absolute top-0 start-0 z-2 w-0 h-0 rounded-end-2 text-light text-center"
+                t-att-class="{'red-tag' : props.showWarning, 'favorite-product': props.product.is_favorite}">
+                <t t-esc="props.product.qty_available"/>
+            </div>
+        </xpath>
+    </t>
+
+</templates>
